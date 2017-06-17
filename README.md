@@ -174,3 +174,9 @@ My name is Ethelred II the Unready. I live in United Kingdom. Stay at House of W
 # DEMO PAGE
 
 https://jsfiddle.net/norlihazmeyGhazali/gxx8cg0o/
+
+
+# Resources & Materials
+
+1) [Oboe.js](oboejs.com)
+2) [Data source](https://mysafeinfo.com/api/data?list=englishmonarchs&format=json)
