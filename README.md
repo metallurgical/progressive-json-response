@@ -1,5 +1,5 @@
 # progressive-json-response
-Load/fetch JSON response chunk by chunk using [oboe.js](http://oboejs.com/why). Instead of waiting the whole response return from endpoint, we can populate the display part by part during chunk data received, end up can improved user experience. So, why not give it a try and intergrate into your project. Cheers!
+Load/fetch JSON response chunk by chunk using [oboe.js](http://oboejs.com/why). Instead of waiting the whole response returned from endpoint, we can populate the display part by part during chunk data received, end up can improved user experienced. So, why not give it a try and intergrate into your project. Cheers!
 
 **Quote From oboe.js**
 
@@ -46,7 +46,7 @@ oboe('https://mysafeinfo.com/api/data?list=englishmonarchs&format=json')
     });
 ```
 
-## Step 3 - HTML(During endpoint request), this data was loaded and rendered chunk by chunk asynchronously
+## Step 3 - HTML(During endpoint request), these data was loaded and rendered chunk by chunk asynchronously
 
 ```HTML
 
