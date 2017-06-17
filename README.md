@@ -20,24 +20,33 @@ Load/fetch JSON response chunk by chunk using [oboe.js](http://oboejs.com/why). 
 var output = document.getElementById('output');
 
 oboe('https://mysafeinfo.com/api/data?list=englishmonarchs&format=json')
+    // capture nm property
     .node('nm', function(elem) {
+        // create new <li> element
         var li = document.createElement('li');
         li.innerHTML = 'My name is ' + elem;
         output.appendChild(li);
     })
+    // capture city property
     .node('cty', function(elem) {
+        // append next ptoperty to existing li element
         var lastChild = output.lastChild;
         lastChild.innerHTML = lastChild.innerHTML + '. I live in ' + elem;
     })
+    // capture house property
     .node('hse', function(elem) {
+        // append next ptoperty to existing li element
         var lastChild = output.lastChild;
         lastChild.innerHTML = lastChild.innerHTML + '. Stay at ' + elem;
     })
+    // capture year property
     .node('yrs', function(elem) {
+        // append next ptoperty to existing li element
         var lastChild = output.lastChild;
         lastChild.innerHTML = lastChild.innerHTML + '. My very sad and happy moment was last from ' + elem;
 
     })
+    // final load
     .done(function( data ) {
     	setTimeout( function () {
         	alert( 'Done load request from endpoint!!, see browser console for data view. This alert the actual response time was finished load. The list element showed at the page was loaded chunk by chunk instead of waiting the whole data finish fetched!!' );
