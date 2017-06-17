@@ -1,6 +1,10 @@
 # progressive-json-response
 Load/fetch JSON response chunk by chunk using [oboe.js](http://oboejs.com/why). Instead of waiting the whole response return from endpoint, we can populate the display part by part during chunk data received, end up can improved user experience. So, why not give it a try and intergrate into your project. Cheers!
 
+**Quote From oboe.js**
+
+> Oboe.js makes it easy for the programmer to use chunks from the response as soon as they arrive. This helps webapps to feel faster when running over mobile networks
+
 # Code Example
 
 ## Step 1 - HTML(before data load)
