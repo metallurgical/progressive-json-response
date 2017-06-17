@@ -29,19 +29,19 @@ oboe('https://mysafeinfo.com/api/data?list=englishmonarchs&format=json')
     })
     // capture city property
     .node('cty', function(elem) {
-        // append next ptoperty to existing li element
+        // append next property to existing li element
         var lastChild = output.lastChild;
         lastChild.innerHTML = lastChild.innerHTML + '. I live in ' + elem;
     })
     // capture house property
     .node('hse', function(elem) {
-        // append next ptoperty to existing li element
+        // append next property to existing li element
         var lastChild = output.lastChild;
         lastChild.innerHTML = lastChild.innerHTML + '. Stay at ' + elem;
     })
     // capture year property
     .node('yrs', function(elem) {
-        // append next ptoperty to existing li element
+        // append next property to existing li element
         var lastChild = output.lastChild;
         lastChild.innerHTML = lastChild.innerHTML + '. My very sad and happy moment was last from ' + elem;
 
